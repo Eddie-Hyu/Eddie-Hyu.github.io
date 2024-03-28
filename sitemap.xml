@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eddie-hyu.github.io/music/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E4%BA%94-%E4%B8%BB%E9%A1%8C%E5%95%8F%E7%AD%94/</loc>
     
     <lastmod>2024-03-28</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://eddie-hyu.github.io/about/</loc>
-    
-    <lastmod>2024-03-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://eddie-hyu.github.io/music/</loc>
     
     <lastmod>2024-03-28</lastmod>
     
@@ -92,15 +92,6 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/cover/README</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://eddie-hyu.github.io/cover/README_EN</loc>
     
     <lastmod>2024-03-26</lastmod>
@@ -110,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/cover/setting.json</loc>
+    <loc>https://eddie-hyu.github.io/cover/README</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -120,6 +111,15 @@
   
   <url>
     <loc>https://eddie-hyu.github.io/cover/manifest.json</loc>
+    
+    <lastmod>2024-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eddie-hyu.github.io/cover/setting.json</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -191,15 +191,6 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%9B%9B-%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE-2/</loc>
-    
-    <lastmod>2024-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://eddie-hyu.github.io/2018/07/24/markdown/</loc>
     
     <lastmod>2024-02-22</lastmod>
@@ -218,6 +209,15 @@
   </url>
   
   <url>
+    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%9B%9B-%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE-2/</loc>
+    
+    <lastmod>2024-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://eddie-hyu.github.io/2020/01/05/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B-Tag-Plugins/</loc>
     
     <lastmod>2024-02-22</lastmod>
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/06/13/%E8%87%AA%E5%AE%9A%E7%BE%A9%E4%BB%A3%E7%A2%BC%E9%85%8D%E8%89%B2/</loc>
+    <loc>https://eddie-hyu.github.io/2020/12/30/%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%81%B4%E9%82%8A%E6%AC%84/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/12/30/%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%81%B4%E9%82%8A%E6%AC%84/</loc>
+    <loc>https://eddie-hyu.github.io/2020/06/13/%E8%87%AA%E5%AE%9A%E7%BE%A9%E4%BB%A3%E7%A2%BC%E9%85%8D%E8%89%B2/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/Gallery/marvel/</loc>
+    <loc>https://eddie-hyu.github.io/Gallery/wallpaper/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/Gallery/wallpaper/</loc>
+    <loc>https://eddie-hyu.github.io/Gallery/marvel/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
