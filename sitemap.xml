@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/cover/setting.json</loc>
+    <loc>https://eddie-hyu.github.io/cover/manifest.json</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/cover/manifest.json</loc>
+    <loc>https://eddie-hyu.github.io/cover/setting.json</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -200,15 +200,6 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%9B%9B-%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE-2/</loc>
-    
-    <lastmod>2024-02-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://eddie-hyu.github.io/2020/07/31/Butterfly%E6%B7%BB%E5%8A%A0Aplayer%E6%95%99%E7%A8%8B/</loc>
     
     <lastmod>2024-02-22</lastmod>
@@ -227,6 +218,15 @@
   </url>
   
   <url>
+    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%9B%9B-%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE-2/</loc>
+    
+    <lastmod>2024-02-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://eddie-hyu.github.io/2020/01/05/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B-Tag-Plugins/</loc>
     
     <lastmod>2024-02-22</lastmod>
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/06/13/%E8%87%AA%E5%AE%9A%E7%BE%A9%E4%BB%A3%E7%A2%BC%E9%85%8D%E8%89%B2/</loc>
+    <loc>https://eddie-hyu.github.io/2020/10/28/when-set-the-top-img-to-false/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
@@ -245,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/10/28/when-set-the-top-img-to-false/</loc>
+    <loc>https://eddie-hyu.github.io/2020/06/13/%E8%87%AA%E5%AE%9A%E7%BE%A9%E4%BB%A3%E7%A2%BC%E9%85%8D%E8%89%B2/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
@@ -301,7 +301,7 @@
 
   <url>
     <loc>https://eddie-hyu.github.io/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -309,63 +309,63 @@
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/Hexo/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/%E4%B8%BB%E9%A1%8C/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/butterfly/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/Aplayer/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/highlight/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/Bar/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/tags/top-img/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -374,28 +374,28 @@
   
   <url>
     <loc>https://eddie-hyu.github.io/categories/Docs%E6%96%87%E6%AA%94/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/categories/%E9%80%B2%E9%9A%8E%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/categories/Markdown/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://eddie-hyu.github.io/categories/Demo/</loc>
-    <lastmod>2024-03-29</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
