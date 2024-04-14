@@ -110,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/cover/README</loc>
-    
-    <lastmod>2024-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://eddie-hyu.github.io/cover/README_EN</loc>
     
     <lastmod>2024-03-26</lastmod>
@@ -128,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/cover/setting.json</loc>
+    <loc>https://eddie-hyu.github.io/cover/README</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -138,6 +129,15 @@
   
   <url>
     <loc>https://eddie-hyu.github.io/cover/manifest.json</loc>
+    
+    <lastmod>2024-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://eddie-hyu.github.io/cover/setting.json</loc>
     
     <lastmod>2024-03-26</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%85%AD-%E9%80%B2%E9%9A%8E%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%9B%9B-%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE-2/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%9B%9B-%E4%B8%BB%E9%A1%8C%E9%85%8D%E7%BD%AE-2/</loc>
+    <loc>https://eddie-hyu.github.io/2020/05/28/Butterfly-%E5%AE%89%E8%A3%9D%E6%96%87%E6%AA%94-%E5%85%AD-%E9%80%B2%E9%9A%8E%E6%95%99%E7%A8%8B/</loc>
     
     <lastmod>2024-02-22</lastmod>
     
