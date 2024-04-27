@@ -4744,6 +4744,9 @@ mjx-assistive-mml {
     display: none;
   }
 }
+.aplayer {
+  color: $font-white;
+}
 [data-theme="dark"] #web_bg {
   background: url(https://images.wallpaperscraft.com/image/single/plane_sky_art_129149_1280x720.jpg);
   background-attachment: local;
@@ -10988,6 +10991,9 @@ mjx-assistive-mml {
   .fancybox__toolbar__column.is-middle {
     display: none;
   }
+}
+.aplayer {
+  color: $font-white;
 }
 [data-theme="dark"] #web_bg {
   background: url(https://images.wallpaperscraft.com/image/single/plane_sky_art_129149_1280x720.jpg);
