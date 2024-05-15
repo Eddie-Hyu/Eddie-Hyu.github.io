@@ -1,22 +1,19 @@
-name: Build and Deploy
-on: [push]
+name: Node.js Package
+# 监测图床分支，2020年10月后github新建仓库默认分支改为main，记得更改
+on:
+  push:
+    branches:
+      - master
+
 jobs:
-  build-and-deploy:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          persist-credentials: false
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          yarn
-          npm run build
+          node-version: "12.x"
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish
         env:
-          CI: false
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.（这里就是把生成的public文件推#送到master分支）
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
