@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "templater",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -138,7 +139,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "155b54c19fa9b681",
+  "active": "00c9549c689ca37e",
   "lastOpenFiles": [
     "public/cover/upgrade-your-browser/end-of-ie-support/js/er3eport.min.js",
     "public/cover/upgrade-your-browser/end-of-ie-support/js",
