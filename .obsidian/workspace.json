@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "119e2c97d0e05f5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "9993566b021d743a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "155b54c19fa9b681",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "31334ae6b980c8b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "fecbace4ad128135",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8fb5a827d4b5ac7b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "00c9549c689ca37e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eec541bf40419797",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9d4cb5603644cb3e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b57ccc10e1378784",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2841ab70da17cdc5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3c234124df797e5b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c957fbad69a65cfa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c6a8903dfa1c89a6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "155b54c19fa9b681",
+  "lastOpenFiles": [
+    "public/cover/upgrade-your-browser/end-of-ie-support/js/er3eport.min.js",
+    "public/cover/upgrade-your-browser/end-of-ie-support/js",
+    "public/cover/upgrade-your-browser/js/main.min.js",
+    "public/cover/upgrade-your-browser/js/er3eport.min.js",
+    "public/cover/upgrade-your-browser/js",
+    "public/cover/upgrade-your-browser/images/se360.png",
+    "public/cover/upgrade-your-browser/images/safari.png",
+    "public/cover/upgrade-your-browser/images/qqbrowser.png",
+    "public/cover/upgrade-your-browser/images/firefox.png",
+    "public/cover/upgrade-your-browser/images/edge.png",
+    "public/cover/upgrade-your-browser/images/chrome.png",
+    "public/cover/upgrade-your-browser/images",
+    "public/bilibili_player/index.html",
+    "public/bilibili_player",
+    "public/link/index.html",
+    "public/link",
+    "public/diary/index.html",
+    "public/cover/font/fontawesome-webfont.svg",
+    "public/img/山林.jpg",
+    "public/live2dw/assets/moc/koharu.2048/texture_00.png",
+    "public/cover/img/icon/72.png"
+  ]
+}

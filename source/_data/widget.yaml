@@ -1,0 +1,17 @@
+top:
+  - class_name: 'card-docs card-categories'
+    id_name:
+    name: 文档目录
+    icon: fas fa-car-side
+    html: |
+
+bottom:
+  - class_name:
+    id_name:
+    name:
+    icon:
+    order:
+    html:
+
+# top: 創建的 widget 會出現在非 sticky 區域（即所有頁面都會顯示)
+# bottom: 創建的 widget 會出現在 sticky 區域（除了文章頁都會顯示)

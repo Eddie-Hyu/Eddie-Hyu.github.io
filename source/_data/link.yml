@@ -1,0 +1,93 @@
+# 1. 確保你使用 Butterfly 主題
+# 2. 確保你的網站是 https
+# 3. 修改 source/_data/link.yml
+# 4. 按要求新增內容
+#     - name: 博客名
+#       link: 博客地址
+#       avatar: 博客頭像
+#       descr: 博客描述
+# 5. 發起 Pull requests ，合併到 butterfly.js.org 倉庫
+
+- class_name: '<i class="fas fa-check-double" style="color: #FF6666;padding-right: 0.4rem"></i>友情链接'
+  class_desc: '<span style="font-style: italic;">最可愛的朋友在這裏</span>'
+  link_list:
+    - name: 磊大大
+      link: /
+      avatar: /img/profile/头像.jpg
+      descr: 欢迎来玩~
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、簡單且強大的網誌框架
+    - name: Butterfly
+      link: https://github.com/jerryc127/hexo-theme-butterfly
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
+      descr: '🦋 A Hexo Theme: Butterfly'
+
+- class_name: '<i class="fa-solid fa-image" style="color:#00cccc;padding-right: 0.4rem"></i>壁纸网站'
+  class_desc: '<span style="font-style: italic;">看看风景~</span>'
+  link_list:
+    - name: simperdesk
+      link: https://simpledesktops.com/
+      avatar: https://simpledesktops.com/browse/desktops/2013/jul/25/analogica/
+      descr: 简洁可爱，极简主义推荐！
+    - name: WallpapersCraft
+      link: https://wallpaperscraft.com/
+      avatar: https://wallpaperscraft.com/public/img/general/logo.png?v=042beb361
+      descr: 风格很多，选择很多。
+
+- class_name: '<i class="fa-solid fa-icons" style="color:#00cccc;padding-right: 0.4rem"></i>图标网站'
+  class_desc: '<span style="font-style: italic;">好看的图标~</span>'
+  link_list:
+    - name: fontawesome
+      link: https://fontawesome.com/
+      avatar: http://www.w3.org/2000/svg
+      descr: 本网站主要使用的图标网站
+    - name: 阿里矢量图库
+      link: https://www.iconfont.cn/
+      avatar: https://img.alicdn.com/imgextra/i2/O1CN01FF1t1g1Q3PDWpSm4b_!!6000000001920-55-tps-508-135.svg
+      descr: 阿里系图标，免费好用！
+
+- class_name: '<i class="fa-solid fa-robot" style="color:#00cccc;padding-right: 0.4rem"></i>AI网站'
+  class_desc: '<span style="font-style: italic;">AI合集</span>'
+  link_list:
+    - name: 国内公益chatgpt
+      link: https://sharedchat.fun/
+      avatar: https://t10.baidu.com/it/u=3001416051,198333688&fm=30&app=106&f=JPEG?w=640&h=640&s=A6938D6264C55AF6101FC252020010FD
+      descr: 网站包含gpt4，放心使用。
+    - name: 国内公益chatgpt
+      link: https://chatgptplus.cn/
+      avatar: https://t10.baidu.com/it/u=3001416051,198333688&fm=30&app=106&f=JPEG?w=640&h=640&s=A6938D6264C55AF6101FC252020010FD
+      descr: 测试正常可用。
+    - name: ai汇总
+      link: https://www.aihub.cn/
+      avatar: https://www.aihub.cn/wp-content/uploads/2023/08/aihub_cn_logo.png
+      descr: 优质AI工具汇总
+    - name: ailogo
+      link: https://ailogo.qq.com/guide/brandname
+      avatar: https://ailogo.qq.com/pics/ailogo_icon.png
+      descr: AI Logo是一款基于人工智能技术的Logo设计工具。
+    - name: 通义万象
+      link: https://tongyi.aliyun.com/wanxiang/
+      avatar: https://img.alicdn.com/imgextra/i4/O1CN01tKHYG31nxV2ZRMlB9_!!6000000005156-55-tps-261-62.svg
+      descr: 阿里推出的一款大模型AI绘画，每日免费使用50次。
+    - name: chatPPT
+      link: https://www.chat-ppt.com
+      avatar: https://www.chat-ppt.com/static/img/logo_icon.76b4d398.svg
+      descr: 直接输入PPT主题即可快速一键生成文档
+    - name: 千图设计室
+      link: https://hisheai.com/
+      avatar: https://pic.hisheai.com/static/images/public/logo-text.png?t=4
+      descr: 图片处理工具  https://tusiart.com/
+    - name: 吐司ai
+      link: https://tusiart.com/
+      avatar: https://images.tusiassets.com/system/5c80acde65a0b0a52bacdc181811fd62.png!mfit_w240_h240_jpg_avif
+      descr: 在线文生图  https://www.aihub.cn/tools/music/soundbug/
+    - name: 音虫
+      link: https://www.soundbug.com/
+      avatar: https://images.tusiassets.com/system/5c80acde65a0b0a52bacdc181811fd62.png!mfit_w240_h240_jpg_avif
+      descr: 音虫（SoundBug）是一款用于音乐编曲和录音的软件，
+    - name: 音虫
+      link: https://www.soundbug.com/
+      avatar: https://images.tusiassets.com/system/5c80acde65a0b0a52bacdc181811fd62.png!mfit_w240_h240_jpg_avif
+      descr: 音虫（SoundBug）是一款用于音乐编曲和录音的软件，

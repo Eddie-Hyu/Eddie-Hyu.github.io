@@ -1,0 +1,12 @@
+- class_name: 📺 电影
+  class_desc: #分类描述
+  link_list:
+    - name: 让子弹飞 #名字
+      img: https://t1.szrtcpa.com/upload/vod/20220313-27/fa8e1f40e62df7aa609cba34f5ee8a25.jpg #图片链接
+      score: 5 # 1-5星
+      icon: fa-solid fa-film #左上角图标
+      tip: 电影 # 右上角文字
+      url: # 可选
+
+
+
