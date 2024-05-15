@@ -11,8 +11,12 @@
             "id": "155b54c19fa9b681",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/win10更新后出现“其他用户”且无法登录解决.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -61,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "source/_posts/win10更新后出现“其他用户”且无法登录解决.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "source/_posts/win10更新后出现“其他用户”且无法登录解决.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,15 +124,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "source/_posts/win10更新后出现“其他用户”且无法登录解决.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -136,31 +143,58 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "00c9549c689ca37e",
+  "active": "155b54c19fa9b681",
   "lastOpenFiles": [
-    "public/cover/upgrade-your-browser/end-of-ie-support/js/er3eport.min.js",
-    "public/cover/upgrade-your-browser/end-of-ie-support/js",
-    "public/cover/upgrade-your-browser/js/main.min.js",
-    "public/cover/upgrade-your-browser/js/er3eport.min.js",
-    "public/cover/upgrade-your-browser/js",
+    "db.json",
+    "public/wallpaper/bg/index.html",
+    "public/wallpaper/index.html",
+    "public/wallpaper/bg",
+    "public/wallpaper",
+    "public/tags/知识库/index.html",
+    "public/tags/標籤外掛/index.html",
+    "public/tags/日常/index.html",
+    "public/tags/教程/index.html",
+    "public/tags/开发/index.html",
+    "public/tags/工具/index.html",
+    "public/cover/font/fontawesome-webfont.svg",
+    "public/live2dw/assets/moc/koharu.2048/texture_00.png",
     "public/cover/upgrade-your-browser/images/se360.png",
     "public/cover/upgrade-your-browser/images/safari.png",
-    "public/cover/upgrade-your-browser/images/qqbrowser.png",
     "public/cover/upgrade-your-browser/images/firefox.png",
+    "public/cover/upgrade-your-browser/images/qqbrowser.png",
     "public/cover/upgrade-your-browser/images/edge.png",
     "public/cover/upgrade-your-browser/images/chrome.png",
-    "public/cover/upgrade-your-browser/images",
-    "public/bilibili_player/index.html",
-    "public/bilibili_player",
-    "public/link/index.html",
-    "public/link",
-    "public/diary/index.html",
-    "public/cover/font/fontawesome-webfont.svg",
-    "public/img/山林.jpg",
-    "public/live2dw/assets/moc/koharu.2048/texture_00.png",
-    "public/cover/img/icon/72.png"
+    "public/cover/img/profile/头像2.jpeg",
+    "public/cover/img/profile/头像.jpg",
+    "template/imgurl.md",
+    "source/_posts/作品集.md",
+    "source/_posts/win10更新后出现“其他用户”且无法登录解决.md",
+    "source/_posts/Butterfly-安裝文檔-二-主題頁面.md",
+    "template/hexo.md",
+    "source/_posts/Butterfly-安裝文檔-四-主題配置-2.md",
+    "source/_posts/Butterfly-安裝文檔-三-主題配置-1.md",
+    "source/_posts/Butterfly-安裝文檔-六-進階教程.md",
+    "source/_posts/自定義代碼配色.md",
+    "source/_posts/正则表达式常用.md",
+    "source/_posts/猫狗英文汇总.md",
+    "source/_posts/hexo魔改汇总.md",
+    "source/_posts/Butterfly添加Aplayer教程.md",
+    "source/_data/作品集.md",
+    "source/_posts/Butterfly-安裝文檔-一-快速開始.md",
+    "source/_posts/標籤外掛-Tag-Plugins.md",
+    "source/_posts/when-set-the-top-img-to-false.md",
+    "source/_posts/markdown.md",
+    "source/_posts/github工具汇总.md",
+    "source/_posts/未命名.canvas",
+    "2024-05-15.md",
+    "未命名.md",
+    "source/_posts/语音识别.md",
+    "downloaded_content/hexo.md",
+    "downloaded_content/web_content.md",
+    "备注.md"
   ]
 }

@@ -1,0 +1,1 @@
+<img src="{%normal%}XXX.jpg">name</img>
