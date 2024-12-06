@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>打字效果</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #typing-text {
+            font-size: 24px;
+            border-right: 2px solid #000;
+            padding-right: 5px;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: #000
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="typing-text"></div>
+  </body>
+<script>
+    function typeWriter(element, text, speed = 50) {
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            } else {
+                // 当打字完成时，清空内容并重新开始
+                setTimeout(() => {
+                    element.innerHTML = '';
+                    i = 0;
+                    type();  // 重新调用函数开始循环
+                }, 1000);  // 延迟1秒后重启
+            }
+        }
+        type();
+    }
+
+    const textElement = document.getElementById('typing-text');
+    typeWriter(textElement, "欢迎来到我的网站！这是一个自动打字效果的演示。");
+</script>
+</html>
+
+

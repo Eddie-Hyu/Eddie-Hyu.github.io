@@ -1,0 +1,50 @@
+.carousel {
+    top: 20%;
+    width: 100%;
+    position: absolute;
+    height: 800px;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.carousel-list {
+    top: 20%;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    perspective: 1000px;
+}
+
+.carousel-item {
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    user-select: none;
+    transition: 0.4s;
+    left: 50%;
+    top: 0;
+    margin-left: -300px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.arrow img {
+    width: 60px;
+}
+
+.arrow i {
+    font-size: 72px;
+    color: black;
+}
+
+.prev {
+    left: 100px;
+}
+
+.next {
+    right: 100px;
+}
