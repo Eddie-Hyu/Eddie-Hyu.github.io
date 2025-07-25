@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漏水的水龙头</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        *{margin:0;padding:0}svg{display:none}body{height:100vh;background:rgb(0 0 0 / 80%);display:flex;align-items:center;justify-content:center}.wrapper{position:relative;width:100%;max-width:400px;height:400px}.wrapper-puddle{position:absolute;left:-28px;bottom:10px;width:100%;height:50px;perspective:1000px;perspective-origin:center center}.puddle{position:absolute;width:100%;transform-style:preserve-3d}.p1{content:'';position:absolute;width:100%;height:100px;background:#0049ff;border-radius:50%;transform:rotateX(50deg) translateZ(50px);display:flex;align-items:center;justify-content:center}.tap{position:relative;display:flex;align-items:center}.tap .base{width:20px;height:100px;border-radius:5px;background:#D8D8DB}.tap .base-2{width:20px;height:60px;border-radius:0px 5px 5px 0px;background:#535C7B}.tap .tap-body{position:relative;width:110px;height:45px;background:#90A4AE}.tap .tap-body:before{content:'';position:absolute;bottom:0;right:0;width:13px;height:13px;background:transparent;border-radius:0 50%;transform:translate(0,13px);z-index:1;box-shadow:2px -2px 0 0px #90A4AE}.tap .aerator{position:relative;transform:translateY(18px);width:45px;height:80px;background:#90A4AE;border-radius:0 50px 0 0;z-index:1}.tap .aerator .water{position:absolute;left:0;right:0;margin:auto;bottom:-10px;width:90%;height:10px;background:#4294FF;border-radius:0 0 10px 10px;z-index:-1;-webkit-filter:url('#liquid');filter:url('#liquid')}.tap .aerator .water .drop{position:relative;left:0;right:0;margin:auto;width:20px;height:20px;transform:rotate(45deg);border-radius:0px 10px 10px 10px;background:#4294FF;animation:drop 1.5s cubic-bezier(0.895,0.030,0.685,0.220) infinite}.tap .tap-body .b1{position:absolute;top:50%;left:0;right:0;margin:auto;transform:translateY(-50%);width:75px;height:75px;border-radius:50%;background:#90A4AE}.tap .tap-body .b1 .child-b1{position:relative;top:0;margin:auto;transform:translateY(calc(-100% + 8px));width:42px;height:10px;background:#90A4AE;border-radius:5px 5px 0 0}.tap .tap-body .key{position:relative;top:0;left:50%;transform:translate(-50%,calc(-100% - 12px));width:95px;height:40px;display:flex;justify-content:center}.tap .tap-body .key .square{position:relative;top:0;transform:translateY(-8px);width:40px;height:30px;background:#DEDFE1;z-index:1;border-radius:10px}.tap .tap-body .key:before{content:'';position:absolute;width:100%;height:13px;border-radius:13px;background:#DEDFE1}.tap .tap-body .key:after{content:'';position:absolute;left:0;right:0;margin:auto;width:13px;height:100%;background:#DEDFE1}.ponch{width:20px;height:20px;border-radius:50%;background:#4294FF;transform:scale(0);animation:ponch 1.5s linear infinite}.circles{position:absolute;width:50%;height:50%;border:1px solid white;border-radius:50%;transform:scale(0);animation:expand 1.5s 1.5s linear infinite}@keyframes ponch{0%{transform:scale(0)}95%{transform:scale(0)}100%{transform:scale(1.2)}}@keyframes expand{0%{transform:scale(0)}50%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(2)}}@keyframes drop{0%{top:0}99.9%{opacity:1}100%{opacity:0;top:232px}}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="tap">
+            <div class="base"></div>
+            <div class="base-2"></div>
+            <div class="tap-body">
+                <div class="b1">
+                    <div class="child-b1"></div>
+                    <div class="key">
+                        <div class="square"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="aerator">
+                <div class="water">
+                    <div class="drop"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-puddle">
+            <div class="puddle">
+                <div class="p1">
+                    <div class="ponch"></div>
+                    <div class="circles" style="--i:1;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="liquid">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 10 -4"
+                    result="liquid" />
+            </filter>
+        </defs>
+    </svg>
+</body>
+
+</html>

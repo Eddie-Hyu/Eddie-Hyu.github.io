@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Interface</title>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <input type="text" id="message-input" />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        var ws = new WebSocket('ws://127.0.0.1:8000/gradio_chat/');
+
+        ws.onmessage = function(event) {
+            var messages = document.getElementById('messages');
+            var data = JSON.parse(event.data);
+            messages.innerHTML += "<p>" + data.message + "</p>";
+        };
+
+        function sendMessage() {
+            var input = document.getElementById('message-input');
+            ws.send(JSON.stringify({ 'message': input.value }));
+            input.value = '';
+        }
+    </script>
+</body>
+</html>

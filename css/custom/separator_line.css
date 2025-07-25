@@ -1,0 +1,58 @@
+/*阅读模式渐变色分割线*/
+#spline hr {
+	border-top: 1px solid;
+	border-image: linear-gradient(to right, #ef201c, #e96036,#e6ef82, #e09a29, #41e249, #26c6da, #4e5ff2, #7e57c2, #de5fb8) 7;
+}
+/*实时模式渐变色分割线*/
+#spline div.hr.cm-line hr {
+	border-top: 1px solid;
+	border-image: linear-gradient(to right, #ef201c, #e96036,#e6ef82, #e09a29, #41e249, #26c6da, #4e5ff2, #7e57c2, #de5fb8) 7;
+}
+
+/*自定义分割线*/
+/*#spline hr {*/
+/*  margin-block-start: 4em;*/
+/*  margin-block-end: 4em;*/
+/*  border: none;*/
+/*  height: 1px;*/
+/*  background-image: linear-gradient(*/
+/*    to right,*/
+/*    var(--background),*/
+/*    var(--font-color),*/
+/*    var(--background)*/
+/*  );*/
+/*}*/
+/*#spline hr::after {*/
+/*  content: "🎏";*/
+/*  display: inline-block;*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%) rotate(0deg);*/
+/*  transform-origin: 50% 50%;*/
+/*  padding: 0.5rem;*/
+/*  color: #8ec07c;*/
+/*  background-color: var(--background);*/
+/*}*/
+/*#spline hr.cm-line hr {*/
+/*  margin-block-start: 0.5em;*/
+/*  margin-block-end: 0.5em;*/
+/*  border: none;*/
+/*  height: 1px;*/
+/*  background-image: linear-gradient(*/
+/*    to right,*/
+/*    var(--background),*/
+/*    var(--font-color),*/
+/*    var(--background)*/
+/*  );*/
+/*}*/
+/*#spline hr.cm-line hr::after {*/
+/*  content: "🎏";*/
+/*  display: inline-block;*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%) rotate(0deg);*/
+/*  transform-origin: 50% 50%;*/
+/*  padding: 0.5rem;*/
+/*  color: #8ec07c;*/
+/*  background-color: var(--background);*/
+/*}*/

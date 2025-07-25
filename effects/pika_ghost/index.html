@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可爱的皮卡丘</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body{min-height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#230d1b}svg{width:100vw;max-height:100vh;min-width:300px;background:linear-gradient(0deg,rgba(35,13,27,1) 0%,rgba(35,13,27,1) 12%,rgba(35,21,45,1) 12%,rgba(35,21,45,1) 36%,rgba(25,15,32,1) 36%,rgba(25,15,32,1) 38%,rgba(68,47,81,1) 38%,rgba(68,47,81,1) 40%,rgba(234,110,48,1) 40%,rgba(234,110,48,1) 100%)}
+    </style>
+</head>
+
+<body>
+    <svg id="svg" viewbox="-133 0 1066 600" aria-labelledby="uniqueDescID" preserveaspectratio="xMidYMin meet"
+        role="img">
+        <desc id="uniqueDescID">This Halloween Pikachu follows your mouse or screen taps</desc>
+        <defs>
+            <lineargradient id="lightGradient" x1="398" x2="398" y1="604" y2="148" gradientunits="userSpaceOnUse">
+                <stop offset="0.3" stop-color="#fff" stop-opacity="0"></stop>
+                <stop offset="1" stop-color="#fff" stop-opacity="1"></stop>
+            </lineargradient>
+            <filter id="blurry" height="150%" width="150%" x="-25%" y="-25%">
+                <fegaussianblur in="SourceGraphic" stddeviation="2.2" result="blur"></fegaussianblur>
+            </filter>
+            <rect id="wallPattern" width="100" height="356" fill="#ea8731" x="0" y="0"></rect>
+            <g id="webPattern" fill="none" opacity="0.7" stroke="#fff" stroke-miterlimit="10" stroke-width="2.83">
+                <line x1="579" x2="686" y1="26"></line>
+                <line x1="598" x2="686" y1="66"></line>
+                <line x1="629" x2="686" y1="94"></line>
+                <line x1="663" x2="686" y1="107"></line>
+                <line x1="703" x2="686" y1="112"></line>
+                <line x1="735" x2="686" y1="93"></line>
+                <line x1="775" x2="686" y1="76"></line>
+                <line x1="803" x2="686" y1="41"></line>
+                <line x1="805" x2="686" y1="6"></line>
+                <path d="M588.5,23.5c0-16-6.71-29-15-29"></path>
+                <path d="M617.5,16.5c0-12.16-6.26-22-14-22"></path>
+                <path d="M644.5,10.5c0-8.84-6.71-16-15-16"></path>
+                <path d="M610.5,56.5c0-18.24-9.84-33-22-33"></path>
+                <path d="M632.5,42.5c0-14.37-6.71-26-15-26"></path>
+                <path d="M654.5,23.5c0-7.19-4.47-13-10-13"></path>
+                <path d="M636.5,81.5c0-16-11.63-25-26-25"></path>
+                <path d="M650.5,58.5c0-8.84-8-16-18-16"></path>
+                <path d="M665.5,35.5c0-5-3-12-11-12"></path>
+                <path d="M665.5,96.5c0-11-16-17-29-15"></path>
+                <path d="M671.5,71.5c0-6.63-10-13-21-13"></path>
+                <path d="M677.5,42.5c1-3.56-7-11-13-7"></path>
+                <path d="M697.5,78.5c-4-8-14-13-27-8"></path>
+                <path d="M701.5,103.5c-7-5-15-14-36-8"></path>
+                <path d="M701.5,103.5c9-14,19-17,31-16"></path>
+                <path d="M697.5,76.5c3-8,14-15,22-12"></path>
+                <path d="M693.5,50.5c2-8,9-9,15-8"></path>
+                <path d="M720.5,65.5c4-11,15-17,24-15"></path>
+                <path d="M744.5,50.5c0-12.71,9.39-23,21-23"></path>
+                <path d="M732.5,87.5c0-13.82,11.87-23,29-23"></path>
+                <path d="M761.5,64.5c0-14.92,14.31-27,32-27"></path>
+                <path d="M727.5,35.5c-2-8,4.92-17,11-17"></path>
+                <path d="M708.5,42.5c3-7,10-10,19-7"></path>
+                <path d="M693.5,48.5c-1-5-10-10-17-6"></path>
+                <path d="M738.5,18.5c-2-6,0-14,6-16"></path>
+                <path d="M765.5,27.5c-2-11,4-22,14-23"></path>
+                <path d="M793.5,37.5c-6-13-4-27,7-32"></path>
+                <path d="M744.5,2.5c0-5.53,4-10,9-10"></path>
+                <path d="M777.5,4.5c0-6.63,4.92-12,11-12"></path>
+                <path d="M797.5,5.5c0-6.08,3.13-11,7-11"></path>
+            </g>
+            <path id="batPattern" fill="#23152d"
+                d="M-34.53,3.9c-.75-1.37,11.68-18.74,20.47-16.16C-2.87-9-2.59-.47.32-.36,2.44-.27,6.4-10.73,17-11c8-.21,17.66,14.16,17.09,14.85-.39.47-2.74-2.24-6.27-2.38-4.12-.17-6.28,4.28-8.68,4.6-2,.28-2-2.91-7-2.4C8.6,4,9.11,6.78,7.07,7.7,5.63,8.35,5.24.55-1.2,2.41c-4.21,1.22-5.15,4.75-6.53,4C-9.37,5.49-10,2.76-12,1.82a3.77,3.77,0,0,0-2.6.05c-2.15.62-4.41,4.07-5.82,4S-21.69,1.59-25.2.74C-29.51-.31-34.09,4.69-34.53,3.9Z">
+            </path>
+            <clippath id="backgroundClip">
+                <rect width="300%" height="100%" fill="#000" x="-150%" y="0"></rect>
+            </clippath>
+        </defs>
+        <g id="background">
+            <use xlink:href="#wallPattern" x="-350"></use>
+            <use xlink:href="#wallPattern" x="-150"></use>
+            <use xlink:href="#wallPattern" x="50"></use>
+            <use xlink:href="#wallPattern" x="250"></use>
+            <use xlink:href="#wallPattern" x="450"></use>
+            <use xlink:href="#wallPattern" x="650"></use>
+            <use xlink:href="#wallPattern" x="850"></use>
+            <use xlink:href="#wallPattern" x="1050"></use>
+        </g>
+        <g id="deco" clip-path="url(#backgroundClip)">
+            <use xlink:href="#webPattern" x="100" y="-10"></use>
+            <use xlink:href="#webPattern" x="-840" y="-30"></use>
+            <path id="deco-string" fill="none" stroke="#23152d" stroke-miterlimit="10" stroke-width="5.67"
+                d="M-274-3c79,118,263,258.36,445,148C265,88,263,0,266,0c0,0,24,75,104.5,75.5,106.79.66,116.29-78.24,123-76,12,4,20.06,129.59,144.5,157.5,107,24,204-3,411-159">
+            </path>
+            <g id="eye2">
+                <line x1="96" y1="169" x2="96" y2="189.5" fill="none" stroke="#23152d" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="8.5"></line>
+                <g id="eye2ball">
+                    <circle cx="96" cy="207" r="17.5" fill="#fff" stroke="#23152d" stroke-linecap="round"
+                        stroke-miterlimit="10" stroke-width="5.67"></circle>
+                    <circle cx="102" cy="212" r="6" fill="#23152d"></circle>
+                </g>
+            </g>
+            <g id="eye1">
+                <line x1="599" y1="134" x2="599" y2="154.5" fill="none" stroke="#23152d" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="8.5"></line>
+                <g id="eye1ball">
+                    <circle cx="599" cy="172" r="17.5" fill="#fff" stroke="#23152d" stroke-linecap="round"
+                        stroke-miterlimit="10" stroke-width="5.67"></circle>
+                    <circle cx="605" cy="178" r="6" fill="#23152d"></circle>
+                </g>
+            </g>
+            <g transform="translate(-200, 80) rotate(120)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(-110, 150) rotate(110)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(0, 185) rotate(90)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(170, 145) rotate(60)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(235, 80) rotate(40)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(330, 65) rotate(130)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(450, 55) rotate(65)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(540, 95) rotate(120)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(690, 165) rotate(90)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(795, 150) rotate(75)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(890, 105) rotate(60)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+            <g transform="translate(990, 40) rotate(45)">
+                <use xlink:href="#batPattern"></use>
+            </g>
+        </g>
+        <g id="lamp" clip-path="url(#backgroundClip)">
+            <polygon id="lamp-light" opacity="0.4" fill="url(#lightGradient)"
+                points="800 604 0 604 364 148 436 148 800 604" style="mix-blend-mode:soft-light"></polygon>
+            <g id="lamp-2" data-name="lamp">
+                <ellipse cx="399.92" cy="148" fill="#fff2bd" stroke="#fff" stroke-miterlimit="10" stroke-width="2.83"
+                    rx="26.5" ry="8.5"></ellipse>
+                <line x1="399.92" x2="399.92" y1="-16.5" y2="97.5" fill="#23152d" stroke="#23152d"
+                    stroke-miterlimit="10" stroke-width="8.5"></line>
+                <polygon fill="#23152d"
+                    points="428.92 102 408.42 102 408.42 93 391.42 93 391.42 102 370.92 102 361.92 148 437.92 148 428.92 102">
+                </polygon>
+            </g>
+        </g>
+        <g id="pikaboo">
+            <g id="pikabooMain">
+                <path id="tail"
+                    d="M196,332c-9,2-26,12-27,7-2.19-11-2-45-10-48-4-1.49-57.6,18.18-60,31-3,16,15,52,23,52,9,0,24-26,28-25,5,1.24,3.89,18.7,9,17,6-2,25-12,40-26"
+                    fill="#fcdc55" stroke="#46777f" stroke-miterlimit="10" stroke-width="5.67"></path>
+                <g id="ear-right">
+                    <path d="M348,277c-10-27-14-74-5-74,14,0,34,52.85,42,95.13" fill="#fff" stroke="#46777f"
+                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.67"></path>
+                    <path
+                        d="M339,231c2,0,7-1,12,0,11,2.19,13,5,16,6-10.76-23.8-18.39-33-23-34C337.05,201.54,339,225,339,231Z"
+                        fill="#46777f"></path>
+                </g>
+                <path id="arm-left" opacity="1" d="M370,354c12.57-4.41,33.67-3.52,36,3,5,14-34.68,40.11-42,47"
+                    fill="#fff" stroke="#46777f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.67">
+                </path>
+                <g id="body">
+                    <path id="body-fill"
+                        d="M183,331.09c3.79-9.76,26.22-4.14,43.85-11.43,21.38-8.83,18.09-46.23,76.2-56.62,22.34-4,57.93-1,76.74,24.93,23.8,32.86,8.23,57.54,4.39,76.89C366.65,453.18,286.62,487.46,271.82,488c-3.63.13-12.9-.39-17.54-6.23-4-5.08-5.48-11.43-8.22-14-3.84-3.63-17.55,1-28.51-10.39-11.52-12-6-15.39-11-22.86-3.84-5.71-13.16,0-21.93-16.62-7.92-15,1.1-17.66-1.1-28.05-1.09-5.2-8.77-2.08-8.77-20.78,0-14.88,10.89-15.8,9.32-20.26C182.47,344.08,179.18,341,183,331.09Z"
+                        fill="#fff"></path>
+                    <circle id="body-cheek-left" cx="281.01" cy="327.69" r="14.01" fill="#e71e25" opacity="0.7">
+                    </circle>
+                    <path id="body-cheek-right"
+                        d="M395.25,315.88c-3.39-.24-6.74-.49-9.28,5.32-2.63,6-1.85,11.91,3.26,16.62.63.58,3.77,3.18,4.77.18C392.83,335.52,395,316,393.25,315.88Z"
+                        fill="#ec1c24" opacity="0.7"></path>
+                    <path id="mounth" d="M349,334c3-4,6-8,8-8,3,0,3,3,5,6" fill="none" stroke="#46777f"
+                        stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.97"></path>
+                    <path id="body-stroke"
+                        d="M183,331.09c3.79-9.76,26.22-4.14,43.85-11.43,21.38-8.83,18.09-46.23,76.2-56.62,22.34-4,57.93-1,76.74,24.93,23.8,32.86,8.23,57.54,4.39,76.89C366.65,453.18,286.62,487.46,271.82,488c-3.63.13-12.9-.39-17.54-6.23-4-5.08-5.48-11.43-8.22-14-3.84-3.63-17.55,1-28.51-10.39-11.52-12-6-15.39-11-22.86-3.84-5.71-13.16,0-21.93-16.62-7.92-15,1.1-17.66-1.1-28.05-1.09-5.2-8.77-2.08-8.77-20.78,0-14.88,10.89-15.8,9.32-20.26C182.47,344.08,179.18,341,183,331.09Z"
+                        fill="none" stroke="#46777f" stroke-miterlimit="10" stroke-width="5.67"></path>
+                    <g id="expression-regular" opacity="1">
+                        <path id="body-eye-left"
+                            d="M319.6,298.74c-5.94-1.35-13,2-15.21,8.21-1.38,3.81-1,8.93,2.28,12.34,4.44,4.59,12.33,4.16,17.06.18,4.2-3.52,6.19-10,3.55-15.08A11.81,11.81,0,0,0,319.6,298.74Z"
+                            fill="#46777f"></path>
+                        <circle id="body-eye-left-light" cx="319.83" cy="306.5" r="4.58" fill="#fff"></circle>
+                        <path id="body-eye-right"
+                            d="M371.47,296.32c-5.1,3.63-.61,18.95,4.93,19.88,2.85.48,5.52-2.23,5.72-2.69a13.07,13.07,0,0,0-3-15.44C377.33,296.45,373.65,294.77,371.47,296.32Z"
+                            fill="#46777f"></path>
+                        <path id="body-eye-right-light"
+                            d="M372.73,299.09c-2.38,2.69,0,6.21,2.6,6.6a3,3,0,0,0,3-1.66c.5-1.08-.89-4-2.74-4.85C375.34,299.09,373.47,298.24,372.73,299.09Z"
+                            fill="#fff"></path>
+                    </g>
+                    <g id="expression-afraid" opacity="0">
+                        <path id="blush" opacity="0.5"
+                            d="M317.36,326.73a239.48,239.48,0,0,1,16.18-18.53L325,304.67a147.61,147.61,0,0,1,.05,19.73c-.26,4.07,5.85,6.94,8.54,3.53q8.55-10.86,16.8-22l-9.32-2.52-.13,23.82,9.31-2.52-.25-.46c-1.52-2.66-5.73-3.44-7.86-1-2.33,2.65-2,7.24,1.42,9a5.18,5.18,0,0,0,6.06-.78c3.6-3.51,5.73-9.63,8.06-14a117.08,117.08,0,0,1,9-15.08l-9.32-2.52a191.27,191.27,0,0,1,.6,23.7c-.22,6,8,6.34,9.82,1.33a78.28,78.28,0,0,1,9.39-17.68h-8.64a53.52,53.52,0,0,1,5.5,13.19c1.68,6.21,11.33,3.57,9.65-2.66a64.66,64.66,0,0,0-6.51-15.57c-2-3.45-6.54-3-8.64,0a88.4,88.4,0,0,0-10.39,20.06l9.82,1.33a191.27,191.27,0,0,0-.6-23.7c-.45-5.13-6.33-6.57-9.32-2.53a110.31,110.31,0,0,0-8.24,13.64c-1.26,2.37-2.5,4.75-3.77,7.12-.93,1.76-2,4.91-3.49,6.32l6.06-.79-.3-.15,2.3,3,0,.5-1.46,3.54.1-.12-7.85-1,.26.45c2.47,4.35,9.29,2.39,9.32-2.52l.13-23.82c0-5.36-6.53-6.27-9.31-2.52q-7.49,10.08-15.24,19.94l8.53,3.54a147.61,147.61,0,0,0-.05-19.73c-.28-4.15-5.35-6.83-8.53-3.54a239.48,239.48,0,0,0-16.18,18.53c-3.94,5,3.09,12.13,7.07,7.07Z"
+                            fill="#ff1d25"></path>
+                        <line x1="308" y1="315" x2="323" y2="320" fill="none" stroke="#46777f" stroke-linecap="round"
+                            stroke-miterlimit="10" stroke-width="5.67"></line>
+                        <line x1="382" y1="310" x2="375" y2="315" fill="none" stroke="#46777f" stroke-linecap="round"
+                            stroke-miterlimit="10" stroke-width="5.67"></line>
+                        <path id="arm-left-alt"
+                            d="M400,362c0-9.49-20.85-18.68-25-14a6.83,6.83,0,0,0-2,5c0,6.87,0,21,6.42,27,4.32,4,13.19,4.53,16.58,0C399,376,400,370,400,362Z"
+                            fill="#fff" stroke="#46777f" stroke-linecap="round" stroke-miterlimit="10"
+                            stroke-width="5.67"></path>
+                    </g>
+                </g>
+                <path id="arm-right" d="M290,356c23.55-8.39,41.82-9.26,45-3,4.14,8.14-17.87,27.05-19,28" fill="#fff"
+                    stroke="#46777f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.67"></path>
+                <g id="ear-left">
+                    <path d="M257,295c-9-23.49-32-57.55-17-92.78,7.4-17.39,38.19,48.76,50,70.47" fill="#fff"
+                        stroke="#46777f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5.67"></path>
+                    <path
+                        d="M266.94,229l0,0C265,227,250,197,244,200c-11.87,5.94-8,40-7,43.92V244A38.79,38.79,0,0,1,255,231,37.07,37.07,0,0,1,266.94,229Z"
+                        fill="#46777f"></path>
+                </g>
+            </g>
+            <g id="pikabooShadow">
+                <ellipse filter="url(#blurry)" opacity=".1" cx="250" cy="530" rx="100" ry="10" fill="#fff2bd"></ellipse>
+            </g>
+        </g>
+    </svg>
+</body>
+<script>
+    gsap.set("#pikaboo",{y:30,transformOrigin:'50% 50%'});gsap.set("#eye1ball",{transformOrigin:'50% 50%'});gsap.set("#eye2ball",{transformOrigin:'50% 50%'});var pika=document.querySelector("#pikaboo");var pikaBody=document.querySelector("#body");var svg=document.querySelector("#svg");var pos={x:window.innerWidth/2,y:window.innerHeight/2};var mouse={x:pos.x,y:pos.y};var bboxRect=svg.getBBox();var svgWidth=bboxRect.width var svgHeight=bboxRect.height var speed=0.01;var xSet=gsap.quickSetter(pika,"x","px");var movingRight;var angle1=0;var angle2=0;var eye1=document.querySelector("#eye1ball");var eye2=document.querySelector("#eye2ball");getAngle=(eye,e)=>{let x=(eye.getBoundingClientRect().left)+(eye.clientWidth/2)let y=(eye.getBoundingClientRect().top)+(eye.clientHeight/2)angle=(Math.atan2(e.pageX-x,e.pageY-y)*(180/Math.PI)*-1)+45;return angle}window.addEventListener("mousemove",tapOrMove,false);window.addEventListener("touchend",tapOrMove,false);function tapOrMove(e){mouse.x=e.pageX;movingRight=e.pageX>(window.innerWidth/2);angle1=getAngle(eye1,e);angle2=getAngle(eye2,e);return false}atEdge=()=>{if(movingRight){if(pika.getBoundingClientRect().right>=svg.getBoundingClientRect().right){return true}}else{if(pika.getBoundingClientRect().left<=svg.getBoundingClientRect().left){return true}}return false}gsap.ticker.add(()=>{var dt=1.0-Math.pow(1.0-speed,gsap.ticker.deltaRatio());pos.x+=(mouse.x-pos.x)*dt;var svg={x:pos.x/window.innerWidth*svgWidth*2-svgWidth,}if(!atEdge()){xSet(svg.x)}if(mouse.x<pos.x){gsap.set("#pikaboo",{scaleX:-1})}else{gsap.set("#pikaboo",{scaleX:1})}gsap.set("#eye1ball",{rotation:angle1});gsap.set("#eye2ball",{rotation:angle2})});const tl=gsap.timeline({defaults:{duration:3,repeat:-1,yoyo:true,ease:'Power1.easeInOut'}});tl.to('#pikabooMain',{yPercent:-30}).to('#pikabooShadow',{scale:0.8,opacity:0.05,xPercent:5,transformOrigin:'50% 50%'},"<").to('#lamp-light',{duration:0.8,opacity:0.2,duration:1,repeat:-1,repeatDelay:8,ease:"rough({ template: none.out, strength: 1, points: 20, taper: 'none', randomize: true, clamp:  false})"},'<');pikaBody.addEventListener('mouseenter',beingShy,false);pikaBody.addEventListener('mouseleave',beingNormal,false);var tl2=gsap.timeline();function beingShy(e){if(tl2.reversed()){tl2.play()}tl2.to("#arm-left",{duration:0,opacity:0}).to('#expression-regular',{duration:0,opacity:0}).to('#expression-afraid',{duration:0,opacity:1},"<").to('#arm-left-alt',{duration:0.2,yPercent:-90},"<").to('#arm-right',{duration:0.2,yPercent:-70,xPercent:20,rotation:-30,transformOrigin:'25% 50%'},"<").to('#blush',{duration:0.2,opacity:0.4},"<")}function beingNormal(e){tl2.reverse()}!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t((e=e||self).window=e.window||{})}(this,function(e){"use strict";function m(e){return Math.round(1e5*e)/1e5||0}var E=/[achlmqstvz]|(-?\d*\.?\d*(?:e[\-+]?\d+)?)[0-9]/gi,b=/[\+\-]?\d*\.?\d+e[\+\-]?\d+/gi,Y=Math.PI/180,k=Math.sin,B=Math.cos,F=Math.abs,J=Math.sqrt;function arcToSegment(e,t,n,s,i,r,o,a,h){if(e!==a||t!==h){n=F(n),s=F(s);var u=i%360*Y,f=B(u),c=k(u),l=Math.PI,g=2*l,v=(e-a)/2,d=(t-h)/2,m=f*v+c*d,p=-c*v+f*d,x=m*m,y=p*p,w=x/(n*n)+y/(s*s);1<w&&(n=J(w)*n,s=J(w)*s);var C=n*n,M=s*s,E=(C*M-C*y-M*x)/(C*y+M*x);E<0&&(E=0);var b=(r===o?-1:1)*J(E),P=n*p/s*b,S=-s*m/n*b,N=f*P-c*S+(e+a)/2,D=c*P+f*S+(t+h)/2,O=(m-P)/n,T=(p-S)/s,V=(-m-P)/n,_=(-p-S)/s,q=O*O+T*T,A=(T<0?-1:1)*Math.acos(O/J(q)),R=(O*_-T*V<0?-1:1)*Math.acos((O*V+T*_)/J(q*(V*V+_*_)));isNaN(R)&&(R=l),!o&&0<R?R-=g:o&&R<0&&(R+=g),A%=g,R%=g;var G,L=Math.ceil(F(R)/(g/4)),j=[],z=R/L,I=4/3*k(z/2)/(1+B(z/2)),H=f*n,Q=c*n,Z=c*-s,U=f*s;for(G=0;G<L;G++)m=B(i=A+G*z),p=k(i),O=B(i+=z),T=k(i),j.push(m-I*p,p+I*m,O+I*T,T-I*O,O,T);for(G=0;G<j.length;G+=2)m=j[G],p=j[G+1],j[G]=m*H+p*Z+N,j[G+1]=m*Q+p*U+D;return j[G-2]=a,j[G-1]=h,j}}function stringToRawPath(e){function ib(e,t,n,s){f=(n-e)/3,c=(s-t)/3,a.push(e+f,t+c,n-f,s-c,n,s)}var t,n,s,i,r,o,a,h,u,f,c,l,g,v,d,m=(e+"").replace(b,function(e){var t=+e;return t<1e-4&&-1e-4<t?0:t}).match(E)||[],p=[],x=0,y=0,w=m.length,C=0,M="ERROR: malformed path: "+e;if(!e||!isNaN(m[0])||isNaN(m[1]))return console.log(M),p;for(t=0;t<w;t++)if(g=r,isNaN(m[t])?o=(r=m[t].toUpperCase())!==m[t]:t--,s=+m[t+1],i=+m[t+2],o&&(s+=x,i+=y),t||(h=s,u=i),"M"===r)a&&(a.length<8?--p.length:C+=a.length),x=h=s,y=u=i,a=[s,i],p.push(a),t+=2,r="L";else if("C"===r)o||(x=y=0),(a=a||[0,0]).push(s,i,x+1*m[t+3],y+1*m[t+4],x+=1*m[t+5],y+=1*m[t+6]),t+=6;else if("S"===r)f=x,c=y,"C"!==g&&"S"!==g||(f+=x-a[a.length-4],c+=y-a[a.length-3]),o||(x=y=0),a.push(f,c,s,i,x+=1*m[t+3],y+=1*m[t+4]),t+=4;else if("Q"===r)f=x+2/3*(s-x),c=y+2/3*(i-y),o||(x=y=0),x+=1*m[t+3],y+=1*m[t+4],a.push(f,c,x+2/3*(s-x),y+2/3*(i-y),x,y),t+=4;else if("T"===r)f=x-a[a.length-4],c=y-a[a.length-3],a.push(x+f,y+c,s+2/3*(x+1.5*f-s),i+2/3*(y+1.5*c-i),x=s,y=i),t+=2;else if("H"===r)ib(x,y,x=s,y),t+=1;else if("V"===r)ib(x,y,x,y=s+(o?y-x:0)),t+=1;else if("L"===r||"Z"===r)"Z"===r&&(s=h,i=u,a.closed=!0),("L"===r||.5<F(x-s)||.5<F(y-i))&&(ib(x,y,s,i),"L"===r&&(t+=2)),x=s,y=i;else if("A"===r){if(v=m[t+4],d=m[t+5],f=m[t+6],c=m[t+7],n=7,1<v.length&&(v.length<3?(c=f,f=d,n--):(c=d,f=v.substr(2),n-=2),d=v.charAt(1),v=v.charAt(0)),l=arcToSegment(x,y,+m[t+1],+m[t+2],+m[t+3],+v,+d,(o?x:0)+1*f,(o?y:0)+1*c),t+=n,l)for(n=0;n<l.length;n++)a.push(l[n]);x=a[a.length-2],y=a[a.length-1]}else console.log(M);return(t=a.length)<6?(p.pop(),t=0):a[0]===a[t-2]&&a[1]===a[t-1]&&(a.closed=!0),p.totalPoints=C+t,p}function p(){return y||"undefined"!=typeof window&&(y=window.gsap)&&y.registerPlugin&&y}function q(){(y=p())?(y.registerEase("_CE",n.create),i=1):console.warn("Please gsap.registerPlugin(CustomEase)")}function s(e){return~~(1e3*e+(e<0?-.5:.5))/1e3}function v(){return String.fromCharCode.apply(null,arguments)}function C(e,t,n,s,i,r,o,a,h,u,f){var c,l=(e+n)/2,g=(t+s)/2,v=(n+i)/2,d=(s+r)/2,m=(i+o)/2,p=(r+a)/2,x=(l+v)/2,y=(g+d)/2,w=(v+m)/2,M=(d+p)/2,E=(x+w)/2,b=(y+M)/2,P=o-e,S=a-t,N=Math.abs((n-o)*S-(s-a)*P),D=Math.abs((i-o)*S-(r-a)*P);return u||(u=[{x:e,y:t},{x:o,y:a}],f=1),u.splice(f||u.length-1,0,{x:E,y:b}),h*(P*P+S*S)<(N+D)*(N+D)&&(c=u.length,C(e,t,l,g,x,y,E,b,h,u,f),C(E,b,w,M,m,p,o,a,h,u,f+1+(u.length-c))),u}var y,i,t,r="CustomEase",o=v(103,114,101,101,110,115,111,99,107,46,99,111,109),a=function(e){for(var t=0===(window?window.location.href:"").indexOf(v(102,105,108,101,58,47,47))||-1!==e.indexOf(v(108,111,99,97,108,104,111,115,116))||-1!==e.indexOf(v(49,50,55,46,48,32,48,46,49)),n=[o,v(99,111,100,101,112,101,110,46,105,111),v(99,111,100,101,112,101,110,46,112,108,117,109,98,105,110,103),v(99,111,100,101,112,101,110,46,100,101,118),v(99,111,100,101,112,101,110,46,97,112,112),v(112,101,110,115,46,99,108,111,117,100),v(99,115,115,45,116,114,105,99,107,115,46,99,111,109),v(99,100,112,110,46,105,111),v(112,101,110,115,46,105,111),v(103,97,110,110,111,110,46,116,118),v(99,111,100,101,99,97,110,121,111,110,46,110,101,116),v(116,104,101,109,101,102,111,114,101,115,116,46,110,101,116),v(99,101,114,101,98,114,97,120,46,99,111,46,117,107),v(116,121,109,112,97,110,117,115,46,110,101,116),v(116,119,101,101,110,109,97,120,46,99,111,109),v(116,119,101,101,110,108,105,116,101,46,99,111,109),v(112,108,110,107,114,46,99,111),v(104,111,116,106,97,114,46,99,111,109),v(119,101,98,112,97,99,107,98,105,110,46,99,111,109),v(97,114,99,104,105,118,101,46,111,114,103),v(99,111,100,101,115,97,110,100,98,111,120,46,105,111),v(99,115,98,46,97,112,112),v(115,116,97,99,107,98,108,105,116,122,46,99,111,109),v(99,111,100,105,101,114,46,105,111),v(109,111,116,105,111,110,116,114,105,99,107,115,46,99,111,109),v(106,115,102,105,100,100,108,101,46,110,101,116)],s=n.length;-1<--s;)if(-1!==e.indexOf(n[s]))return!0;return t&&window&&window.console&&console.log(v(87,65,82,78,73,78,71,58,32,97,32,115,112,101,99,105,97,108,32,118,101,114,115,105,111,110,32,111,102,32)+r+v(32,105,115,32,114,117,110,110,105,110,103,32,108,111,99,97,108,108,121,44,32,98,117,116,32,105,116,32,119,105,108,108,32,110,111,116,32,119,111,114,107,32,111,110,32,97,32,108,105,118,101,32,100,111,109,97,105,110,32,98,101,99,97,117,115,101,32,105,116,32,105,115,32,97,32,109,101,109,98,101,114,115,104,105,112,32,98,101,110,101,102,105,116,32,111,102,32,67,108,117,98,32,71,114,101,101,110,83,111,99,107,46,32,80,108,101,97,115,101,32,115,105,103,110,32,117,112,32,97,116,32,104,116,116,112,58,47,47,103,114,101,101,110,115,111,99,107,46,99,111,109,47,99,108,117,98,47,32,97,110,100,32,116,104,101,110,32,100,111,119,110,108,111,97,100,32,116,104,101,32,39,114,101,97,108,39,32,118,101,114,115,105,111,110,32,102,114,111,109,32,121,111,117,114,32,71,114,101,101,110,83,111,99,107,32,97,99,99,111,117,110,116,32,119,104,105,99,104,32,104,97,115,32,110,111,32,115,117,99,104,32,108,105,109,105,116,97,116,105,111,110,115,46,32,84,104,101,32,102,105,108,101,32,121,111,117,39,114,101,32,117,115,105,110,103,32,119,97,115,32,108,105,107,101,108,121,32,100,111,119,110,108,111,97,100,101,100,32,102,114,111,109,32,101,108,115,101,119,104,101,114,101,32,111,110,32,116,104,101,32,119,101,98,32,97,110,100,32,105,115,32,114,101,115,116,114,105,99,116,101,100,32,116,111,32,108,111,99,97,108,32,117,115,101,32,111,114,32,111,110,32,115,105,116,101,115,32,108,105,107,101,32,99,111,100,101,112,101,110,46,105,111,46)),t||!(window.location.href="https://"+o+v(47,114,101,113,117,105,114,101,115,45,109,101,109,98,101,114,115,104,105,112,47)+"?plugin="+r+"&source=codepen")}(window?"codepen.io":""),x=/[-+=\.]*\d+[\.e\-\+]*\d*[e\-\+]*\d*/gi,w=/[cLlsSaAhHvVtTqQ]/g,n=((t=CustomEase.prototype).setData=function setData(e,t){t=t||{};var n,s,i,r,o,a,h,u,f,c=(e=e||"0,0,1,1").match(x),l=1,g=[],v=[],d=t.precision||1,m=d<=1;if(this.data=e,(w.test(e)||~e.indexOf("M")&&e.indexOf("C")<0)&&(c=stringToRawPath(e)[0]),4===(n=c.length))c.unshift(0,0),c.push(1,1),n=8;else if((n-2)%6)throw"Invalid CustomEase";for(0==+c[0]&&1==+c[n-2]||function _normalize(e,t,n){n||0===n||(n=Math.max(+e[e.length-1],+e[1]));var s,i=-1*e[0],r=-n,o=e.length,a=1/(+e[o-2]+i),h=-t||(Math.abs(e[o-1]-e[1])<.01*(e[o-2]-e[0])?function _findMinimum(e){var t,n=e.length,s=1e20;for(t=1;t<n;t+=6)+e[t]<s&&(s=+e[t]);return s}(e)+r:+e[o-1]+r);for(h=h?1/h:-a,s=0;s<o;s+=2)e[s]=(+e[s]+i)*a,e[s+1]=(+e[s+1]+r)*h}(c,t.height,t.originY),this.segment=c,r=2;r<n;r+=6)s={x:+c[r-2],y:+c[r-1]},i={x:+c[r+4],y:+c[r+5]},g.push(s,i),C(s.x,s.y,+c[r],+c[r+1],+c[r+2],+c[r+3],i.x,i.y,1/(2e5*d),g,g.length-1);for(n=g.length,r=0;r<n;r++)h=g[r],u=g[r-1]||h,(h.x>u.x||u.y!==h.y&&u.x===h.x||h===u)&&h.x<=1?(u.cx=h.x-u.x,u.cy=h.y-u.y,u.n=h,u.nx=h.x,m&&1<r&&2<Math.abs(u.cy/u.cx-g[r-2].cy/g[r-2].cx)&&(m=0),u.cx<l&&(u.cx?l=u.cx:(u.cx=.001,r===n-1&&(u.x-=.001,l=Math.min(l,.001),m=0)))):(g.splice(r--,1),n--);if(o=1/(n=1/l+1|0),h=g[a=0],m){for(r=0;r<n;r++)f=r*o,h.nx<f&&(h=g[++a]),s=h.y+(f-h.x)/h.cx*h.cy,v[r]={x:f,cx:o,y:s,cy:0,nx:9},r&&(v[r-1].cy=s-v[r-1].y);v[n-1].cy=g[g.length-1].y-s}else{for(r=0;r<n;r++)h.nx<r*o&&(h=g[++a]),v[r]=h;a<g.length-1&&(v[r-1]=g[g.length-2])}return this.ease=function(e){var t=v[e*n|0]||v[n-1];return t.nx<e&&(t=t.n),t.y+(e-t.x)/t.cx*t.cy},(this.ease.custom=this).id&&y.registerEase(this.id,this.ease),this},t.getSVGData=function getSVGData(e){return CustomEase.getSVGData(this,e)},CustomEase.create=function create(e,t,n){return new CustomEase(e,t,n).ease},CustomEase.register=function register(e){y=e,q()},CustomEase.get=function get(e){return y.parseEase(e)},CustomEase.getSVGData=function getSVGData(e,t){var n,i,r,o,a,h,u,f,c,l,g=(t=t||{}).width||100,v=t.height||100,d=t.x||0,p=(t.y||0)+v,x=y.utils.toArray(t.path)[0];if(t.invert&&(v=-v,p=0),"string"==typeof e&&(e=y.parseEase(e)),e.custom&&(e=e.custom),e instanceof CustomEase)n=function rawPathToString(e){!function _isNumber(e){return"number"==typeof e}(e[0])||(e=[e]);var t,n,s,i,r="",o=e.length;for(n=0;n<o;n++){for(i=e[n],r+="M"+m(i[0])+","+m(i[1])+" C",t=i.length,s=2;s<t;s++)r+=m(i[s++])+","+m(i[s++])+" "+m(i[s++])+","+m(i[s++])+" "+m(i[s++])+","+m(i[s])+" ";i.closed&&(r+="z")}return r}(function transformRawPath(e,t,n,s,i,r,o){for(var a,h,u,f,c,l=e.length;-1<--l;)for(h=(a=e[l]).length,u=0;u<h;u+=2)f=a[u],c=a[u+1],a[u]=f*t+c*s+r,a[u+1]=f*n+c*i+o;return e._dirty=1,e}([e.segment],g,0,0,-v,d,p));else{for(n=[d,p],o=1/(u=Math.max(5,200*(t.precision||1))),f=5/(u+=2),c=s(d+o*g),i=((l=s(p+e(o)*-v))-p)/(c-d),r=2;r<u;r++)a=s(d+r*o*g),h=s(p+e(r*o)*-v),(Math.abs((h-l)/(a-c)-i)>f||r===u-1)&&(n.push(c,l),i=(h-l)/(a-c)),c=a,l=h;n="M"+n.join(",")}return x&&x.setAttribute("d",n),n},CustomEase);function CustomEase(e,t,n){i||q(),this.id=e,a&&this.setData(t,n)}p()&&y.registerPlugin(n),n.version="3.5.1",e.CustomEase=n,e.default=n;if(typeof(window)==="undefined"||window!==e){Object.defineProperty(e,"__esModule",{value:!0})}else{delete e.default}});!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?n(exports):"function"==typeof define&&define.amd?define(["exports"],n):n((e=e||self).window=e.window||{})}(this,function(e){"use strict";function f(){return w||"undefined"!=typeof window&&(w=window.gsap)&&w.registerPlugin&&w}function g(e,n){return!!(void 0===e?n:e&&!~(e+"").indexOf("false"))}function h(e){if(w=e||f()){r=w.registerEase;var n,t=w.parseEase(),o=function createConfig(t){return function(e){var n=.5+e/2;t.config=function(e){return t(2*(1-e)*e*n+e*e)}}};for(n in t)t[n].config||o(t[n]);for(n in r("slow",a),r("expoScale",s),r("rough",u),c)"version"!==n&&w.core.globals(n,c[n])}}function i(e,n,t){var o=(e=Math.min(1,e||.7))<1?n||0===n?n:.7:0,r=(1-e)/2,i=r+e,a=g(t);return function(e){var n=e+(.5-e)*o;return e<r?a?1-(e=1-e/r)*e:n-(e=1-e/r)*e*e*e*n:i<e?a?1===e?0:1-(e=(e-i)/r)*e:n+(e-n)*(e=(e-i)/r)*e*e*e:a?1:n}}function j(n,e,t){var o=Math.log(e/n),r=e-n;return t=t&&w.parseEase(t),function(e){return(n*Math.exp(o*(t?t(e):e))-n)/r}}function k(e,n,t){this.t=e,this.v=n,t&&(((this.next=t).prev=this).c=t.v-n,this.gap=t.t-e)}function l(e){"object"!=typeof e&&(e={points:+e||20});for(var n,t,o,r,i,a,f,s=e.taper||"none",u=[],c=0,p=0|(+e.points||20),l=p,v=g(e.randomize,!0),d=g(e.clamp),h=w?w.parseEase(e.template):0,x=.4*(+e.strength||1);-1<--l;)n=v?Math.random():1/p*l,t=h?h(n):n,o="none"===s?x:"out"===s?(r=1-n)*r*x:"in"===s?n*n*x:n<.5?(r=2*n)*r*.5*x:(r=2*(1-n))*r*.5*x,v?t+=Math.random()*o-.5*o:l%2?t+=.5*o:t-=.5*o,d&&(1<t?t=1:t<0&&(t=0)),u[c++]={x:n,y:t};for(u.sort(function(e,n){return e.x-n.x}),a=new k(1,1,null),l=p;l--;)i=u[l],a=new k(i.x,i.y,a);return f=new k(0,0,a.t?a:a.next),function(e){var n=f;if(e>n.t){for(;n.next&&e>=n.t;)n=n.next;n=n.prev}else for(;n.prev&&e<=n.t;)n=n.prev;return(f=n).v+(e-n.t)/n.gap*n.c}}var w,r,a=i(.7);(a.ease=a).config=i;var s=j(1,2);s.config=j;var u=l();(u.ease=u).config=l;var c={SlowMo:a,RoughEase:u,ExpoScaleEase:s};for(var n in c)c[n].register=h,c[n].version="3.0.0";f()&&w.registerPlugin(a),e.EasePack=c,e.ExpoScaleEase=s,e.RoughEase=u,e.SlowMo=a,e.default=c,Object.defineProperty(e,"__esModule",{value:!0})});
+</script>
+</html>
