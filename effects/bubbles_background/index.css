@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 20vh;
+}
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    animation: rise 15s infinite ease-in;
+    opacity: 0;
+}
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+.mouse-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: width 0.3s, height 0.3s;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ldddd.eu.org/sitemap.xml
+Sitemap: https://ldddd.eu.org/baidusitemap.xml

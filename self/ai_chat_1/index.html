@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI chat</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js"></script>
+  </head>
+  <body>
+    <div id="sonHiddenIcon" class="son_icon son_icon_hideen" onclick="btn_display_icon()"></div>
+    <div class="left_layout" id="left_layout_id">
+      <div class="father_icon">
+        <div id="sonIcon" class="son_icon son_icon_display" onclick="btn_icon()"></div>
+        <div id="left_person" class="left_person">
+          <div style="display:flex;justify-content: center;align-items:center">
+            <div class="false_img">
+              <div class="flase_img_son"></div>
+            </div>
+            <div class="false_img_right">
+              <strong>Michael Jackson</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new_chat">新建聊天</div>
+      <div class="new_chat new_chat_text">
+        <div class="false_img" style="border:1px solid lightgray;border-radius:20%;color:green;">...</div>
+        <div style="flex:8;color:green;">前端有哪些性能优化？</div>
+      </div>
+    </div>
+    <div class="right_layout" id="right_layout_id">
+      <!-- <div class="right_layout_flex"> -->
+        <div class="right_layout_son">
+          <div class="right_layout_myselfChat">
+            <div id="datatime" style="flex:2;font-size:13px;color:lightgray"></div>
+            <div style="flex:1">
+              <div class="flase_img_son" style="width:40px;height:40px;"></div>
+            </div>
+          </div>
+          <div class="myself_chat">
+            前端有哪些性能优化？
+          </div>
+          <div class="right_layout_son_ipt">
+            <input id="contentInput" class="ipt" type="text" placeholder="来说点什么吧...">
+            <button class="btn">发送</button>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>

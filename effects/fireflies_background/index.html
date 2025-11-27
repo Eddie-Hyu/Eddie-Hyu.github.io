@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萤火虫背景</title>
+    <link rel="stylesheet" href="./index.css" />
+
+</head>
+<body>
+<div class="content">
+        <h1>Fireflies</h1>
+        <p>Experience a magical night with fireflies!</p>
+    </div>
+    <script>
+        function createFirefly() {
+            const firefly = document.createElement('div');
+            firefly.className = 'firefly';
+            firefly.style.left = `${Math.random() * 100}%`;
+            firefly.style.top = `${Math.random() * 100}%`;
+            firefly.style.animationDelay = `${Math.random() * 15}s, ${Math.random() * 2}s`;
+            document.body.appendChild(firefly);
+        }
+
+        for (let i = 0; i < 50; i++) {
+            createFirefly();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>虚拟键盘</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        width: 100vw;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .keybox {
+        margin: 10% auto;
+        width: 1360px;
+        text-align: center;
+        border: 1px solid #fafafa;
+        padding: 15px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      ul li {
+        padding: 20px 30px;
+        border: 1px solid #fafafa;
+        margin-right: 12px;
+        font-size: 22px;
+        border-radius: 6px;
+        color: #fff;
+        transition: all 0.3s;
+      }
+
+      #esc {}
+
+      #TAB {
+        width: 170px;
+      }
+
+      #CAPSLOCK {
+        width: 185px;
+      }
+
+      #ENTER {
+        width: 164px;
+      }
+
+      #SHIFT {
+        width: 216px;
+      }
+
+      .xg {
+        width: 88px;
+      }
+
+      .active {
+        transform: scale(1.1);
+        background-color: #00aaff;
+        color: #ffffff;
+        box-shadow: 0 0 5px #00aaff,
+          0 0 25px #00aaff,
+          0 0 50px #00aaff,
+          0 0 200px #00aaff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="keybox">
+
+      <ul>
+        <li id="ESCAPE">ESC</li>
+        <li id="1">1</li>
+        <li id="2">2</li>
+        <li id="3">3</li>
+        <li id="4">4</li>
+        <li id="5">5</li>
+        <li id="6">6</li>
+        <li id="7">7</li>
+        <li id="8">8</li>
+        <li id="9">9</li>
+        <li id="0">0</li>
+        <li id="-">-</li>
+        <li id="=">=</li>
+        <li id="BACKSPACE">backspace</li>
+      </ul>
+
+      <ul>
+        <li id="TAB">Tab</li>
+        <li id="Q">Q</li>
+        <li id="W">W</li>
+        <li id="E">E</li>
+        <li id="R">R</li>
+        <li id="T">T</li>
+        <li id="Y">Y</li>
+        <li id="U">U</li>
+        <li id="I">I</li>
+        <li id="O">O</li>
+        <li id="P">P</li>
+        <li id="[">[</li>
+        <li id="]">]</li>
+        <li id="\" class="xg">\</li>
+      </ul>
+
+      <ul>
+        <li id="CAPSLOCK">capslock</li>
+        <li id="A">A</li>
+        <li id="S">S</li>
+        <li id="D">D</li>
+        <li id="F">F</li>
+        <li id="G">G</li>
+        <li id="H">H</li>
+        <li id="J">J</li>
+        <li id="K">K</li>
+        <li id="L">L</li>
+        <li id=";">;</li>
+        <li id="'">'</li>
+        <li id="ENTER">Enter</li>
+      </ul>
+
+      <ul>
+        <li id="SHIFT">shift</li>
+        <li id="Z">Z</li>
+        <li id="X">X</li>
+        <li id="C">C</li>
+        <li id="V">V</li>
+        <li id="B">B</li>
+        <li id="N">N</li>
+        <li id="M">M</li>
+        <li id=",">,</li>
+        <li id=".">.</li>
+        <li id="/">/</li>
+        <li id="SHIFT">shift</li>
+      </ul>
+
+    </div>
+
+    <script>
+      var keyEl;
+      // 键盘事件
+      document.onkeydown = function(e) {
+        // 获取当前按键 转为大写 因为html写的是大写 为了一一对应 本文为雪天前端原创禁止搬运
+        let key = e.key.toUpperCase()
+        // 获取当前按键对应的元素 这一步获取到 是为了给元素添加样式
+        keyEl = document.getElementById(key)
+        keyEl.classList.remove('active')
+        console.log(key, keyEl);
+
+        // 给当前按键添加样式类 本文为雪天前端原创
+        keyEl.classList.add('active')
+      }
+
+      document.onkeyup = function() {
+        console.log("抬起");
+        keyEl.classList.remove('active')
+      }
+    </script>
+  </body>
+</html>

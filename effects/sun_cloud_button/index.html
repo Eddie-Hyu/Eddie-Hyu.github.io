@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阴天与晴天</title>
+  <style>
+    html,body{height:100%;margin:0;padding:0}body{display:flex;align-items:center;justify-content:center;background:#003;overflow:hidden}.toggle{position:relative;width:60vmin;height:30vmin}input,label{position:absolute;top:0;left:0;width:100%;height:100%}input{opacity:0;cursor:pointer}label{border-radius:30vmin;background:#67a;pointer-events:none}input:checked ~ label{background:#39f}.sun{position:absolute;top:3vmin;left:3.5vmin;width:24vmin;height:24vmin;background:#ccb;border-radius:100%;transition:left 0.5s ease}.sun::before{position:absolute;content:'';width:25vmin;height:25vmin;background:#ffa;filter:blur(8vmin);opacity:0;transition:opacity 0.5s ease-in}input:checked ~ label .sun{left:32.5vmin;background:#fc8}input:checked ~ label .sun::before{opacity:0.75}.clouds{position:absolute;top:0;left:0;width:50%;height:100%;overflow:hidden;border-radius:100% 0 0 100%}input:checked ~ label .clouds .cloud{left:-100%}.cloud{position:absolute;width:100%;height:50%;left:-1vmin;transition:left 0.5s ease}.cloud:last-child{left:2vmin;top:40%;transform:rotate3d(0,1,0,180deg);transition-delay:0.1s}.cloud .circle{position:absolute;left:3vmin;top:7vmin;background:#36a;border-radius:100%;width:6vmin;height:6vmin}.cloud .circle:nth-child(1){left:6vmin;top:2.5vmin;width:12vmin;height:12vmin}.cloud .circle:nth-child(2){top:5vmin;left:14vmin;width:9vmin;height:9vmin}.cloud .circle:nth-child(3){top:8vmin;left:21vmin;height:5vmin;width:5vmin}
+  </style>
+</head>
+
+<body>
+
+  <div class="toggle">
+    <input type="checkbox" name="toggle" />
+    <label for="toggle">
+      <div class="sun"></div>
+      <div class="clouds">
+        <div class="cloud">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="cloud">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </label>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+
+#message {
+    position: absolute;
+    width: 240px;
+    height: 500px;
+    right: -310px;
+    font-size: 18px;
+    color: #b4eeb4;
+    font-family: fontOne;
+    box-sizing: border-box
+}
+
+#message ul li {
+    position: absolute;
+    margin: 25px 3px;
+    width: 18px;
+    text-align: center;
+    word-wrap: break-word;
+    border: 1px dashed rgba(255,255,255,0.5);
+}
+
+
+#message ul li:nth-child(1) {
+    right: 5px
+}
+
+#message ul li:nth-child(2) {
+    right: 30px
+}
+
+#message ul li:nth-child(3) {
+    right: 55px
+}
+
+#message ul li:nth-child(4) {
+    right: 80px
+}
+
+#message ul li:nth-child(5) {
+    right: 105px
+}
+
+#message ul li:nth-child(6) {
+    right: 130px
+}
+
+#message ul li:nth-child(7) {
+    right: 155px
+}
+
+#message ul li:nth-child(8) {
+    right: 180px
+}
+
+#message ul li:nth-child(9) {
+    right: 205px
+}
+
+#message ul li:nth-child(10) {
+    right: 230px
+}
+
+.circle-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 950px;
+  height: 950px;
+  border: 1px solid white; /* 设置白色边框 */
+  border-radius: 50%;
+  z-index: -9999;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 930px; /* 设置小一点的同心圆 */
+  height: 930px;
+  border: 1px solid white; /* 设置白色边框 */
+  border-radius: 50%;
+  z-index: -99999;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class or Subclass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .message {
+            margin-top: 20px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Add Class or Subclass</h2>
+
+    <label for="class_icon">Class Icon</label>
+    <input type="text" id="class_icon" placeholder="Enter class icon">
+
+    <label for="style_color">Style Color</label>
+    <input type="text" id="style_color" placeholder="Enter style color">
+
+    <label for="class_name_text">Class Name</label>
+    <input type="text" id="class_name_text" placeholder="Enter class name">
+
+    <label for="class_desc_text">Class Description</label>
+    <input type="text" id="class_desc_text" placeholder="Enter class description">
+
+    <label for="links">Links (JSON format)</label>
+    <input type="text" id="links" placeholder="Enter links in JSON format">
+
+    <label for="action">Action</label>
+    <select id="action">
+        <option value="add_class">Add Class</option>
+        <option value="add_subclass">Add Subclass</option>
+    </select>
+
+    <label for="subclass_name">Subclass Name (Optional for Add Subclass)</label>
+    <input type="text" id="subclass_name" placeholder="Enter subclass name (optional)">
+
+    <label for="link">Link (Optional for Add Subclass)</label>
+    <input type="text" id="link" placeholder="Enter link (optional)">
+
+    <label for="avatar">Avatar (Optional)</label>
+    <input type="text" id="avatar" placeholder="Enter avatar (optional)">
+
+    <label for="descr">Description (Optional)</label>
+    <input type="text" id="descr" placeholder="Enter description (optional)">
+
+    <button id="submitBtn">Submit</button>
+
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+    document.getElementById('submitBtn').addEventListener('click', async () => {
+        const classIcon = document.getElementById('class_icon').value;
+        const styleColor = document.getElementById('style_color').value;
+        const classNameText = document.getElementById('class_name_text').value;
+        const classDescText = document.getElementById('class_desc_text').value;
+        const links = document.getElementById('links').value ? JSON.parse(document.getElementById('links').value) : [];
+        const action = document.getElementById('action').value;
+        const subclassName = document.getElementById('subclass_name').value;
+        const link = document.getElementById('link').value;
+        const avatar = document.getElementById('avatar').value;
+        const descr = document.getElementById('descr').value;
+
+        let url = 'http://localhost:5000/';
+        let payload = {};
+
+        if (action === 'add_class') {
+            url += 'add_class';
+            payload = {
+                class_icon: classIcon,
+                style_color: styleColor,
+                class_name_text: classNameText,
+                class_desc_text: classDescText,
+                links: links
+            };
+        } else if (action === 'add_subclass') {
+            url += 'add_subclass';
+            payload = {
+                class_name: classNameText,
+                name: subclassName,
+                link: link,
+                avatar: avatar,
+                descr: descr
+            };
+        }
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'auth_key': 'your_auth_key'  // Replace with the actual authentication key
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                document.getElementById('message').textContent = result.message;
+                document.getElementById('message').style.color = 'green';
+            } else {
+                document.getElementById('message').textContent = result.message || 'Error occurred';
+                document.getElementById('message').style.color = 'red';
+            }
+        } catch (error) {
+            console.error(error);
+            document.getElementById('message').textContent = 'Failed to connect to server';
+            document.getElementById('message').style.color = 'red';
+        }
+    });
+</script>
+
+</body>
+</html>
